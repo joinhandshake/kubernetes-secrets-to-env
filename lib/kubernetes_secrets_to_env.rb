@@ -19,6 +19,7 @@ module KubernetesSecretsToEnv
     end
 
     def load_secrets
+      puts "loading secrets"
       secrets_list.each do |file_name|
         ENV[file_name] = File.read(File.join(secrets_file_path, file_name)).strip
       end
