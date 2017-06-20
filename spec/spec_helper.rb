@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "kubernetes/secrets/to/env"
+require "kubernetes_secrets_to_env"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
